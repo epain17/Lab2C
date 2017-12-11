@@ -1,6 +1,6 @@
 #include "VG.h"
 
-#include "Rarional.h"
+#include "Rational.h"
 
 //#include "RelOps.h"
 //#include <cassert>

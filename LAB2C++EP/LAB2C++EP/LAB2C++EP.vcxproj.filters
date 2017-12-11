@@ -33,7 +33,7 @@
     <ClInclude Include="VG.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Rarional.h">
+    <ClInclude Include="Rational.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
