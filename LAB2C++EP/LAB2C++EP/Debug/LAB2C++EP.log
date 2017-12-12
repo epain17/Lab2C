@@ -1,5 +1,60 @@
-﻿  stdafx.cpp
-  RatTest.cpp
-c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(108): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
-  LAB2C++EP.cpp
-  Generating Code...
+﻿  RatTest.cpp
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(50): error C2065: 'Rational': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(50): error C2062: type 'short' unexpected
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(51): error C2065: 'Rational': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(51): error C2062: type 'int' unexpected
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(52): error C2065: 'Rational': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(52): error C2062: type '__int64' unexpected
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(55): error C2065: 'RLL': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(55): error C2146: syntax error: missing ';' before identifier 'rllx'
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(55): error C3861: 'rllx': identifier not found
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(56): error C2065: 'RLL': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(56): error C2146: syntax error: missing ';' before identifier 'rlly'
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(56): error C2065: 'rs0': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(56): error C3861: 'rlly': identifier not found
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(59): error C2065: 'rs1': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(60): error C2065: 'rs2': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(61): error C2065: 'rs1': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(61): error C2065: 'rll1': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(62): error C2065: 'rs1': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(62): error C2065: 'Rational': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(62): error C2062: type 'short' unexpected
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(63): error C2065: 'rs1': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(63): error C2065: 'Rational': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(63): error C2062: type 'short' unexpected
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(66): error C2065: 'rs3': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(66): error C3861: 'Rint': identifier not found
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(67): error C2065: 'rs3': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(67): error C3861: 'Rshort': identifier not found
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(68): error C2065: 'rs3': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(68): error C2065: 'rll3': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(69): error C2065: 'rs3': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(69): error C3861: 'Rshort': identifier not found
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(72): error C2065: 'rs3': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(72): error C3861: 'Rshort': identifier not found
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(75): error C2065: 'rs3': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(75): error C3861: 'Rshort': identifier not found
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(77): error C2065: 'rs3': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(77): error C3861: 'Rshort': identifier not found
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(80): error C2065: 'rs0': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(80): error C2065: 'rs1': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(80): error C3861: 'Rshort': identifier not found
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(83): error C2065: 'rll3': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(83): error C3861: 'RLL': identifier not found
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(84): error C2065: 'rll3': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(84): error C3861: 'RLL': identifier not found
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(85): error C2065: 'rll3': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(85): error C3861: 'RLL': identifier not found
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(86): error C2065: 'rll3': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(86): error C3861: 'RLL': identifier not found
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(89): error C2065: 'rll3': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(93): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\limits(18): note: see declaration of 'std'
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(93): error C2065: 'cout': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(93): error C2065: 'rs3': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(94): error C2039: 'cin': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\limits(18): note: see declaration of 'std'
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(94): error C2065: 'cin': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(94): error C2065: 'rs2': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(95): error C2065: 'rs3': undeclared identifier
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rattest.cpp(95): error C2065: 'rs2': undeclared identifier
