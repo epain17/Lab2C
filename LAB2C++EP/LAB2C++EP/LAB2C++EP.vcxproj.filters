@@ -44,8 +44,5 @@
     <ClCompile Include="LAB2C++EP.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RatTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

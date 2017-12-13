@@ -7,7 +7,7 @@ class Rational
 {
 public:
 	Tint P, Q; //nom, denom
-	friend std::ostream& operator<< (std::otream& cout, Rational<Tint> R)
+	friend std::ostream & operator<< (std::ostream & cout, Rational<Tint> R)
 	{
 		cout << R.P << '/' << R.Q;
 		return cout;
@@ -17,78 +17,79 @@ public:
 	Rational(Tint P):P(P), Q(1){}
 	Rational(Tint P, Tint Q) :P(P), Q(Q)
 	{
-		Reduce(P, Q);
+		Reduce(this->P, this->Q);
 	}
 
 	template <typename T>
-	Rational(Rational<T>& r){}
-
-	Rational void simplify()
+	Rational(Rational<T>& r)
 	{
-		if (Q < 0)
-		{
-			P *= -1;
-			Q *= -1;
-		}
-
-		int denom = GCD(P, denom);
-		P /= denom;
-		denom /= denom;
+		P = r.P;
+		Q = r.Q;
 	}
 
-	template <typename T>
-	bool operator== (const Rational<T>& lhs, const Rational<T>& rhs)
+
+
+
+	
+	bool Rational::operator== (const Rational<Tint>& rhs) const
 	{
-		return lhs.P == rhs.P && lhs.Q == rhs.Q;
+		return P == rhs.P && Q == rhs.Q;
 	}
 
-	template <typename T>
-	bool operator!= (const Rational<T>& lhs, const Rational<T>& rhs)
-	{
-		return !(lhs.P == rhs.P && lhs.Q == rhs.Q);
-	}
 
-	template <typename T>
-	Rational operator =(const Rational<T>& lhs, const Rational<T>& rhs)
+	Rational& Rational::operator=  (const Rational<Tint>& rhs)
 	{
-		lhs.P = rhs.P;
-		lhs.Q = rhs.Q;
-		return dynamic_cast<Rational> (lhs);
-	}
-
-	template <typename T>
-	Rational operator+= (const Rational<T>& rhs) const
-	{
-		P = rhs.P * Q + rhs.Q * P;
-		Q = rhs.Q*Q;
-
-		this->simplify();
+		P = rhs.P;
+		Q = rhs.Q;
 		return *this;
 	}
 
-	template <typename T>
-	Rational operator+ (const Rational rhs) const 
+
+	Rational& Rational::operator+= (const Rational<Tint>& rhs)
 	{
-		return Rational{ *this } += rat;
+		this->P = rhs.P * Q + rhs.Q * P;
+		this->Q = rhs.Q*Q;
+		Reduce(this->P, this->Q);
+
+		return *this;
 	}
 
-	template <typename T>
-	Rational operator- (const Rational rhs) const
+	Rational& Rational::operator-= (const Rational<Tint>& rhs)
+	{
+		P = P * rhs.Q + Q rhs.P;
+		Q *= rhs.Q;
+		return *this;
+	}
+
+
+	
+	Rational& Rational::operator+ (const Rational<Tint>& rhs)
+	{
+		*this = Rational{ *this } += rhs;
+		return *this;
+	}
+
+	Rational& Rational::operator- (const Rational<Tint> rhs) 
 	{
 		return Rational{ *this } -= rat;
 	}
 
-	template <typename T>
+	Rational& operator- ()
+	{
+		this->P = (0 - P);
+		return *this;
+	}
+
+
 	Rational operator ++()
 	{
 		return (*this) += 1;
 	}
 
-	template <typename T>
 	Rational operator++(int)
 	{
-		Rational temp{ *this };
-		P += Q;
+		Rational temp(*this );
+		++*this;
 		return temp;
 	}
 
