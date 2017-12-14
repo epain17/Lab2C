@@ -27,13 +27,16 @@ public:
 		Q = r.Q;
 	}
 
-
-
-
-	
-	bool Rational::operator== (const Rational<Tint>& rhs) const
+	operator int()
 	{
-		return P == rhs.P && Q == rhs.Q;
+		return (P / Q);
+	}
+
+
+	template <typename Other>
+	friend bool operator== (const Rational<Tint>& lhs, const Rational<Other>& rhs) 
+	{
+		return lhs.P/lhs.Q == rhs.P/rhs.Q;
 	}
 
 
@@ -47,9 +50,9 @@ public:
 
 	Rational& Rational::operator+= (const Rational<Tint>& rhs)
 	{
-		this->P = rhs.P * Q + rhs.Q * P;
-		this->Q = rhs.Q*Q;
-		Reduce(this->P, this->Q);
+		P = rhs.P * Q + rhs.Q * P;
+		Q = rhs.Q*Q;
+		Reduce(P, Q);
 
 		return *this;
 	}
@@ -61,13 +64,18 @@ public:
 		return *this;
 	}
 
-
-	
-	Rational& Rational::operator+ (const Rational<Tint>& rhs)
+	Rational& Rational::operator+ (int rhs) 
 	{
-		*this = Rational{ *this } += rhs;
-		return *this;
+		Rational temp(*this);
+		return temp += rhs;
+		
 	}
+	
+	//Rational& Rational::operator+ (const Rational<Tint>& rhs)
+	//{
+	//	*this = Rational{ *this } += rhs;
+	//	return *this;
+	//}
 
 	Rational& Rational::operator- (const Rational<Tint> rhs) 
 	{

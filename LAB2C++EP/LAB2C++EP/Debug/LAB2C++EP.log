@@ -1,7 +1,10 @@
 ﻿  LAB2C++EP.cpp
-c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rational.h(26): warning C4244: '=': conversion from '__int64' to 'short', possible loss of data
-  c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\lab2c++ep.cpp(24): note: see reference to function template instantiation 'Rational<short>::Rational<__int64>(Rational<__int64> &)' being compiled
-  c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\lab2c++ep.cpp(24): note: see reference to function template instantiation 'Rational<short>::Rational<__int64>(Rational<__int64> &)' being compiled
-c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rational.h(27): warning C4244: '=': conversion from '__int64' to 'short', possible loss of data
-  LAB2C++EP.vcxproj -> C:\Users\Emil\Documents\GitHub\Lab2C\LAB2C++EP\Debug\LAB2C++EP.exe
-  LAB2C++EP.vcxproj -> C:\Users\Emil\Documents\GitHub\Lab2C\LAB2C++EP\Debug\LAB2C++EP.pdb (Full PDB)
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rational.h(76): error C2059: syntax error: '*'
+  c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rational.h(107): note: see reference to class template instantiation 'Rational<Tint>' being compiled
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rational.h(77): error C2059: syntax error: 'return'
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rational.h(77): error C2238: unexpected token(s) preceding ';'
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rational.h(80): error C2146: syntax error: missing ';' before identifier 'Rational'
+c:\users\emil\documents\github\lab2c\lab2c++ep\lab2c++ep\rational.h(81): fatal error C1903: unable to recover from previous error(s); stopping compilation
+  INTERNAL COMPILER ERROR in 'C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe'
+      Please choose the Technical Support command on the Visual C++
+      Help menu, or open the Technical Support help file for more information
