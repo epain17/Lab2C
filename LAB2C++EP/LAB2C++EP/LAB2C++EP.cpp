@@ -49,12 +49,12 @@ void TestFörGodkänt() {
 	assert(rll3 == RLL(13, 6));
 
 	//// explicit konvertering till Tal. (Kräver VS2012 och kompilator CTnom november 12.
-	//int i = static_cast<int>(rll3);
-	//assert(i == 2);
+	int i = static_cast<int>(rll3);
+	assert(i == 2);
 
 	//// Overloading av << och >> (ut och in matning)
 	std::cout << "Utmatning>" << rs3 << "< skriv in texten mellan > och < + retur\n";
-	//std::cin >> rs2;
+	std::cin >> rs2;
 	assert(rs3 == rs2);
 };
 
